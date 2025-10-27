@@ -3,7 +3,7 @@ package racingcar;
 import java.util.*;
 
 public class Winner {
-    public List<String> findWinners(List<Car> cars) {
+    public static List<String> findWinners(List<Car> cars) {
         List<String> winners = new ArrayList<>();
         int maxPosition = -1;
 

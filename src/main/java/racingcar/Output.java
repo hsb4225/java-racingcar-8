@@ -21,7 +21,7 @@ public class Output {
     public static void printWinners(List<String> winners) {
         System.out.print("최종 우승자 : ");
         Iterator<String> iterator = winners.iterator();
-        
+
         while (iterator.hasNext()) {
             String winner = iterator.next();
             System.out.print(winner);

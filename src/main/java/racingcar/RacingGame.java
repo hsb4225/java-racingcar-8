@@ -11,9 +11,10 @@ public class RacingGame {
         }
     }
 
-    public void straightCar(int number) {
+    public void straightCar() {
         for(Car car : cars) {
             RandomNumber randomNumber = new RandomNumber();
+            randomNumber.randomNumberGenerate();
             int ranNumber = randomNumber.getNumber();
 
             car.straight(ranNumber >= STRAIGHT_DETECTION_NUMBER);
