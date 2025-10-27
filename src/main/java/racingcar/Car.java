@@ -5,11 +5,9 @@ public class Car {
     private int position = 0;
     private String carName;
 
-    public Car(String[] names) {
-        for(String name : names) {
+    public Car(String name) {
             isValidName(name);
             this.carName = name;
-        }
     }
     private void isValidName(String name) {
         if(name == null || name.length() > 5 || name.isBlank())
